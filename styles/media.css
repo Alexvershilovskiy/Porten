@@ -1,0 +1,194 @@
+/*________________________бургер__________________________*/
+@media (max-width: 760px) {
+	.navbar__wrap .menu {
+		display: none;
+	}
+
+	.hamb {
+		display: flex;
+		align-items: center;
+	}
+
+	.hamb__field {
+		padding: 10px 20px;
+		cursor: pointer;
+	}
+
+	.bar {
+		display: block;
+		width: 30px;
+		height: 3px;
+		margin: 6px auto;
+		background-color: #fff;
+		transition: 0.2s;
+	}
+
+	.popup {
+		position: fixed;
+		top: 123px;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background: #121213;
+		opacity: 0.9;
+		z-index: 100;
+		display: flex;
+		transition: 0.3s;
+	}
+
+	.popup.open {
+		left: 0;
+	}
+
+	.popup .menu {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: start;
+		padding: 50px 0;
+		overflow: auto;
+	}
+
+	.popup .menu>li {
+		width: 100%;
+	}
+
+	.popup .menu>li>a {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		padding: 20px 0;
+		font-size: 20px;
+		font-weight: bold;
+		color: white;
+	}
+
+	.popup .menu>li>a:hover {
+		background-color: #d3cbdde6;
+
+	}
+
+	.hamb__field.active .bar:nth-child(2) {
+		opacity: 0.3;
+		color: rgb(68, 71, 71);
+	}
+
+	.hamb__field.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.hamb__field.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+
+	body.noscroll {
+		overflow: hidden;
+	}
+
+}
+
+@media (max-width: 500px) {
+	.navbar__wrap {
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 5px;
+	}
+}
+
+@media (max-width: 500px) {
+	.top__container {
+		flex-direction: column;
+
+	}
+}
+
+
+/*________________________бургер конец__________________________*/
+@media (max-width: 500px) {
+	.porten__logo {
+		max-width: 280px;
+	}
+}
+
+@media (max-width: 767px) {
+	.season__container {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 767px) {
+	.season__card {
+		flex-wrap: wrap;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 767px) {
+	.season__box {
+		flex-direction: column;
+
+
+	}
+}
+
+@media (max-width: 1400px) {
+	.collection18__pic {
+		margin: 0 auto;
+
+	}
+}
+
+@media (max-width: 1023px) {
+	.season__container {
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+
+	}
+}
+
+@media (max-width: 1023px) {
+	.season__collection {
+		margin-bottom: 40px;
+
+	}
+}
+
+@media (max-width: 1024px) {
+	.season__collection {
+		max-width: 100%;
+
+	}
+}
+
+@media (max-width: 1320px) {
+	.season__box {
+		width: 100%;
+
+	}
+}
+
+@media (max-width: 1023px) {
+	.collection18 {
+		flex-direction: column-reverse;
+
+	}
+}
+
+@media (max-width: 1200px) {
+	.collection18__content {
+		margin-top: 10px;
+
+	}
+}
+
+@media (max-width: 1023px) {
+	.collection18__btn {
+		margin-bottom: 50px;
+
+	}
+}
